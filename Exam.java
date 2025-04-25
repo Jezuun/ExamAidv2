@@ -93,11 +93,13 @@ public class Exam
     System.out.println("Max value is:"+ Collections.max(temps));
     }
     
-    public void termpSort()
+    public void termpSort(ArrayList<Double> temps)
     {
         //Q27
         //output the max temp after using collections.sort
         //Return the final index of the arrayList after calling collections.sort
+        Collections.sort(temps, Collections.reverseOrder());
+        System.out.println(temps);
     }
     
     public void wow()
