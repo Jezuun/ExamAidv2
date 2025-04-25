@@ -28,15 +28,17 @@ public class Exam
     public void sampleMethod(int y)
     {
         // Q24
-        // String a= new String;
-        // String b = new String;
-        //System.out.println(if(a==b;"yes":"no));
-        
+        // a declare and assign values to two string valuables
+        //b test if they're equal
+        //c produce different outputs if theyre equal or not
     }
     
     public void maxTemp()
     {
         //Q25
+        //write a method that receives an arraylist of temperatures as parameter 
+        //and outputs how many of them refer to a conidition of fever
+        //(greater than 37.5), and what was the maximum of all reported temperatures
         //*Take ArrayList*
         //if (Temp > 37,5; int i=0; i++);
         //return int i;
@@ -46,13 +48,19 @@ public class Exam
     public void tempLoop()
     {
         //q26
+        //output the max value with a loop if i already used collections.max
     // same thing but you return the collections.Max
     }
     
     public void termpSort()
     {
         //Q27
+        //output the max temp after using collections.sort
         //Return the final index of the arrayList after calling collections.sort
     }
+    
+    public void wow()
+    {
+        
     }
-
+}
