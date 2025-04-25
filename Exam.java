@@ -1,4 +1,5 @@
-
+import java.util.ArrayList;
+import java.util.Scanner;
 /**
  * Write a description of class Exam here.
  *
@@ -17,6 +18,7 @@ public class Exam
     {
         // initialise instance variables
         x = 0;
+        int fevers= 0;
     }
 
     /**
@@ -31,18 +33,55 @@ public class Exam
         // a declare and assign values to two string valuables
         //b test if they're equal
         //c produce different outputs if theyre equal or not
+        
+        
+        //a
+        String string1 = "hello";
+        String string2 = "hello";
+
+        if (string1.equals(string2)) {//b
+           //c 
+          System.out.println("The strings are equal.");
+        } else {
+         System.out.println("The strings are not equal.");
+        }
+
     }
     
-    public void maxTemp()
-    {
-        //Q25
+    public static void main(String[] args) {
+         //Q25
         //write a method that receives an arraylist of temperatures as parameter 
         //and outputs how many of them refer to a conidition of fever
         //(greater than 37.5), and what was the maximum of all reported temperatures
-        //*Take ArrayList*
-        //if (Temp > 37,5; int i=0; i++);
-        //return int i;
+        ArrayList<Double> temp = new ArrayList<>();
         
+        // Adding elements
+        temp.add(40.1);
+        temp.add(38.2);
+        temp.add(32.3);
+        
+        analyzeTemp(temp);
+       
+        
+    }
+
+    public static void analyzeTemp(ArrayList<Double> temps)
+    {
+        //Q25P2
+       int fevers=0;
+       double maxTemp= Double.NEGATIVE_INFINITY;
+       
+       for (double temp : temps)
+       {
+        if (temp>37.5){
+            fevers++;
+        }
+        if (temp>maxTemp){
+            maxTemp=temp;
+        }
+        }
+        System.out.println("Number of fevers over 37.5 degrees"+fevers);
+        System.out.println("Highest temperature reports"+maxTemp);
     }
     
     public void tempLoop()
