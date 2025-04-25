@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.*;
 /**
  * Write a description of class Exam here.
  *
@@ -84,11 +85,12 @@ public class Exam
         System.out.println("Highest temperature reports"+maxTemp);
     }
     
-    public void tempLoop()
+    public static void tempLoop(ArrayList<Double> temps)
     {
         //q26
         //output the max value with a loop if i already used collections.max
     // same thing but you return the collections.Max
+    System.out.println("Max value is:"+ Collections.max(temps));
     }
     
     public void termpSort()
